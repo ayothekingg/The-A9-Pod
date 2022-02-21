@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+}
+
+.background-img{
+    background-image: url('pod2.jpg');
+    background-repeat: no-repeat;
+   background-size: cover;
+   height: 768px;
+}
+h1{
+    display: inline-block;
+    color: white;
+    text-decoration: line-through;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 30px;
+}
+.navbar{
+
+    backdrop-filter: blur(8px); 
+    height: 768px;;
+margin: 0;
+
+}
+
+div > a{
+    color: white;
+    float: right;
+    text-decoration: none;
+    padding: 20px;
+    padding-top: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+div > a:hover{
+    font-size: 30px;
+    color: rgb(170, 77, 77);
+    font-weight: 800;
+}
+
+.header{
+    font-size: 70px;
+    color: rgb(170, 77, 77);
+    text-align: center;
+    letter-spacing: 25px;
+    font-family: 'Merriweather', serif;
+    padding-top: 50px;
+    
+   
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 318px 318px 318px 320px;
+    grid-template-rows: 120px 200px;
+   gap:4px;
+   
+    padding-top: 20px;
+  margin-top: 0;
+    margin-right: 0;
+  }
+
+  .grid-container > div  {
+   
+    border: 1px solid white;
+  border-top: none;
+  background-color: rgb(148, 93, 93);
+  
+  
+}
+  
+h2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 0px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0px;
+    border-top: none;
+}
+
+.listen-btn{
+    background-color:  black;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+  
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0px;
+}
+
+.font{
+    font-size: 20px;
+}
+
+.download-btn{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+
+h3{
+    color: rgb(175, 167, 167);
+    text-align: center;
+  padding-bottom: 0px;
+    margin-top: 220px;
+    margin-bottom: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    letter-spacing: 25px;
+}

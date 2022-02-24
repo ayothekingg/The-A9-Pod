@@ -6,7 +6,8 @@ body{
     background-image: url('pod2.jpg');
     background-repeat: no-repeat;
    background-size: cover;
-   height: 768px;
+   height: 100%;
+   max-width: 100%;
 }
 h1{
     display: inline-block;
@@ -19,12 +20,12 @@ h1{
 .navbar{
 
     backdrop-filter: blur(8px); 
-    height: 768px;;
+    height: 768px;
 margin: 0;
 
 }
 
-div > a{
+.topnav a {
     color: white;
     float: right;
     text-decoration: none;
@@ -32,7 +33,14 @@ div > a{
     padding-top: 25px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
+    display: inline;
 }
+
+.icon{
+    display: none;
+}
+
+
 
 div > a:hover{
     font-size: 30px;
@@ -48,29 +56,79 @@ div > a:hover{
     font-family: 'Merriweather', serif;
     padding-top: 50px;
     
-   
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 318px 318px 318px 320px;
-    grid-template-rows: 120px 200px;
-   gap:4px;
-   
+.flex-container {
+    display: flex;
+  flex-basis: 100%;
+   flex-direction: row;
+   gap: 10px;
     padding-top: 20px;
   margin-top: 0;
     margin-right: 0;
   }
 
-  .grid-container > div  {
+@media (max-width:800px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .background-img{
+        background-image: url('pod2.jpg');
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .flex-container > div > button{
+       justify-content: center;
+       align-items: center;
+       margin-left: 70px;
+   } 
+
+.topnav a:not(:first-child){
+    display: none;
+}
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+.icon {
+    display: block;
+    color: white;
+    float: right;
+    padding-top: 25px;
+    font-size: 25px;
+   padding-right: 10px;
+   cursor: pointer;
+  }
+.header{
+    font-size: 40px;
+    color: rgb(170, 77, 77);
+    text-align: center;
+    letter-spacing: 25px;
+    font-family: 'Merriweather', serif;
+}
+}
+     .flex-container > div {
    
     border: 1px solid white;
   border-top: none;
   background-color: rgb(148, 93, 93);
+     }
+
   
-  
-}
-  
+
+
+
+
 h2{
     color: black;
     font-size: 30px;
@@ -81,14 +139,14 @@ h2{
     border-top: none;
 }
 
-.listen-btn{
+button{
     background-color:  black;
     color: white;
     width: 150px;
     height: 40px;
     font-size: 20px;
     border-radius: 20px;
-  
+  cursor: pointer;
     font-family: "Montserrat", sans-serif;
     margin-top: 0px;
 }
@@ -97,16 +155,6 @@ h2{
     font-size: 20px;
 }
 
-.download-btn{
-    background-color: black;
-    color: white;
-    width: 150px;
-    height: 40px;
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    margin-top: 0px;
-    border-radius: 20px;
-}
 
 h3{
     color: rgb(175, 167, 167);
@@ -118,3 +166,5 @@ h3{
     font-size: 40px;
     letter-spacing: 25px;
 }
+
+
